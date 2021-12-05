@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+            width: 600px;
+            margin: 40px auto;
+        }
+        .form{
+            background-color: #355C7D;
+            border-radius: 6px;
+            padding: 35px;
+            align-items:center;
+            margin-top: 5rem;
+            display: flex;
+        }
+        .input{
+            padding: 20px;
+            border-radius: 7px;
+            border: none;
+            font-size: 25px;
+            flex: 1;
+        }
+        .input:focus {
+          outline: none;
+        }
+        .add{
+            border: none;
+            font-size: 22px;
+            background-color:#8f94fb;
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .tasks{
+            background-color: #355C7D;
+            border-radius: 6px;
+            margin-top: 28px;
+            padding: 25px;
+        }
+        .tasks .task{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 6px;
+            justify-content: space-between;
+            transition: 3s;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+        .tasks .task:not(:last-child) {
+           margin-bottom: 15px;
+        }
+        .tasks .task:hover {
+           background-color: beige;
+        }
+        .tasks .task span {
+          font-weight: bold;
+          font-size: 15px;
+          background-color:#8f94fb;
+          color: white;
+          padding: 2px 4px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <input type="text" class="input">
+            <input type="submit" class="add" value="add">
+        </div>
+
+        <div class="tasks"> </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
